@@ -1,7 +1,7 @@
 homebrew-myformulas
 ===================
 
-My formulas of [Homebrew](https://github.com/mxcl/homebrew).
+ref.  [Homebrew](https://github.com/mxcl/homebrew).
 I don't promise to maintain this repository.
 
 If you'd like to use this formulas,
