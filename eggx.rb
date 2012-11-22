@@ -7,7 +7,7 @@ class Eggx < Formula
   homepage 'http://www.ir.isas.jaxa.jp/~cyamauch/eggx_procall/'
   url 'http://www.ir.isas.jaxa.jp/~cyamauch/eggx_procall/eggx-0.93r4.tar.gz'
   md5 'ad6cf455d3e74595ca91ec7b205ec98a'
-  version "0.93r4"
+  version '0.93r4'
 
   depends_on 'cmake' => :build
 
