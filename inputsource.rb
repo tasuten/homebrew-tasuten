@@ -8,7 +8,6 @@ class Inputsource < Formula
   homepage 'https://github.com/hnakamur/inputsource'
   url 'git://github.com/hnakamur/inputsource.git'
   version '1.0'
-  # depends_on 'cmake' => :build
 
   def install
     system "make"

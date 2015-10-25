@@ -8,7 +8,6 @@ class OsxCpuTemp < Formula
   homepage 'https://github.com/lavoiesl/osx-cpu-temp'
   url 'git://github.com/lavoiesl/osx-cpu-temp.git'
   version '1.0'
-  # depends_on 'cmake' => :build
 
   def install
     system "make"
