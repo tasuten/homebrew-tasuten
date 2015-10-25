@@ -12,8 +12,6 @@ class Eggx < Formula
   depends_on 'cmake' => :build
 
   def install
-    ENV.x11
-
     system "make PREFIX=#{prefix}"
     system "make install PREFIX=#{prefix}"
   end
