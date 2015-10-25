@@ -4,9 +4,9 @@ require 'formula'
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
 class Inputsource < Formula
-  head 'https://github.com/hnakamur/inputsource.git'
+  head 'git://github.com/hnakamur/inputsource.git'
   homepage 'https://github.com/hnakamur/inputsource'
-  url 'https://github.com/hnakamur/inputsource.git', :revision => 'aed9f8e234e952ad3e4eaea489e66ea4f7390598'
+  url 'git://github.com/hnakamur/inputsource.git'
   version '1.0'
   # depends_on 'cmake' => :build
 
