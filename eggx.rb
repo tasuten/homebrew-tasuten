@@ -5,9 +5,9 @@ require 'formula'
 
 class Eggx < Formula
   homepage 'http://www.ir.isas.jaxa.jp/~cyamauch/eggx_procall/'
-  url 'http://www.ir.isas.jaxa.jp/~cyamauch/eggx_procall/eggx-0.93r4.tar.gz'
-  md5 'ad6cf455d3e74595ca91ec7b205ec98a'
-  version '0.93r4'
+  url 'http://www.ir.isas.jaxa.jp/~cyamauch/eggx_procall/eggx-0.93r5.tar.gz'
+  md5 '236f852a5d8d4591f730e439e5130cc0'
+  version '0.93r5'
 
   depends_on 'cmake' => :build
 
