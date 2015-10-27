@@ -7,7 +7,7 @@ class Ttyload < Formula
 
   def install
     system "make"
-    bin.install('ttyload')
+    system "make install INSTALLDIR=#{prefix}"
   end
 
 end
