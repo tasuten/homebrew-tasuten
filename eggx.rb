@@ -1,4 +1,5 @@
 class Eggx < Formula
+  desc 'Easy X11 graphics library'
   homepage 'http://www.ir.isas.jaxa.jp/~cyamauch/eggx_procall/'
   url 'http://www.ir.isas.jaxa.jp/~cyamauch/eggx_procall/eggx-0.93r5.tar.gz'
   version '0.93r5'
