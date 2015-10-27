@@ -18,6 +18,7 @@ class Eggx < Formula
       http://www.ir.isas.jaxa.jp/~cyamauch/eggx_procall/eggx_procall.pdf
       Japanese version:
       http://www.ir.isas.jaxa.jp/~cyamauch/eggx_procall/eggx_procall.ja.pdf
+
     EOS
   end
 
