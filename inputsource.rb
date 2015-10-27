@@ -1,8 +1,8 @@
 class Inputsource < Formula
   desc 'CLI Tool to select/print text input source on OS X'
-  head 'git://github.com/hnakamur/inputsource.git'
+  head 'https://github.com/hnakamur/inputsource.git'
   homepage 'https://github.com/hnakamur/inputsource'
-  url 'git://github.com/hnakamur/inputsource.git'
+  url 'https://github.com/hnakamur/inputsource.git'
   version '1.0'
 
   def install

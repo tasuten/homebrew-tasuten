@@ -1,8 +1,8 @@
 class Ttyload < Formula
   desc 'Utility to show a graph of load average'
-  head  'git://github.com/lindes/ttyload.git'
+  head  'https://github.com/lindes/ttyload.git'
   homepage 'http://www.daveltd.com/src/util/ttyload/'
-  url 'git://github.com/lindes/ttyload.git'
+  url 'https://github.com/lindes/ttyload.git'
   version '0.5.3'
 
   def install
