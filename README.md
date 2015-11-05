@@ -1,20 +1,17 @@
-homebrew-myformulas
+homebrew-tasuten
 ===================
 
-I don't promise to maintain this repository.
+Usage
+-----
 
-If you'd like to use this formulas,
-==================================
+```sh
+brew tap tasuten/tasuten
+```
 
-    brew tap tasuten/myformulas
-
-You can also use this formulas like this:
-
-    brew install https://raw.github.com/tasuten/homebrew-myformulas/master/{formula}.rb
-
+or `brew install https://raw.githubusercontent.com/tasuten/homebrew-tasuten/master/{formula}.rb`
 
 License
-=======
+-------
 
-This repository is public domain.
+This repository is in the public domain.
 
