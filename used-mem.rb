@@ -9,5 +9,9 @@ class UsedMem < Formula
     bin.install('used-mem')
   end
 
+  test do
+    assert_match /^\d+$/, `#{bin}/used-mem "#u"`.chomp
+  end
+
 end
 
