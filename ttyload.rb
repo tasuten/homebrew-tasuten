@@ -13,8 +13,12 @@ class Ttyload < Formula
 
   test do
     ENV["TERM"] = "xterm-256color"
-    pipe_output "#{bin}/ttyload", "\C-c"
-    assert $?.eql? 130
+    IO.popen("#{bin}/ttyload",  "w+") do |pipe|
+      sleep 1
+      pipe.write "\C-c"
+      pipe.close_write
+    end
+    assert_equal $?.exitstatus, 130
   end
 
 end
