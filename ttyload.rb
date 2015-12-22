@@ -18,7 +18,7 @@ class Ttyload < Formula
       pipe.write "\C-c"
       pipe.close_write
     end
-    assert_equal $?.exitstatus, 130
+    assert $?.eql? 130
   end
 
 end
