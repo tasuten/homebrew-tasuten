@@ -11,5 +11,11 @@ class Ttyload < Formula
     man1.install 'ttyload.1'
   end
 
+  test do
+    ENV["TERM"] = "xterm-256color"
+    pipe_output("#{bin}/ttyload", "\C-c")
+    assert $?.eql?(130)
+  end
+
 end
 
