@@ -10,5 +10,9 @@ class OsxCpuTemp < Formula
     bin.install('osx-cpu-temp')
   end
 
+  test do
+    assert_match /^-?\d+\.\d\u{00B0}C$/, `#{bin}/osx-cpu-temp`.chomp
+  end
+
 end
 
