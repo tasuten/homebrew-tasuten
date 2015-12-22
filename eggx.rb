@@ -23,5 +23,17 @@ class Eggx < Formula
     EOS
   end
 
+ test do
+    (testpath/"compile-test.c").write <<-EOS.undent
+      #include <eggx.h>
+      int main() {
+        return 0;
+      }
+    EOS
+    system "#{bin}/egg", "-o", "compile-test", "compile-test.c"
+    system "./compile-test"
+    assert $?.success?
+ end
+
 end
 
