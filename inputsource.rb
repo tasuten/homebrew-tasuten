@@ -10,5 +10,10 @@ class Inputsource < Formula
     bin.install('inputsource')
   end
 
+  test do
+    system("#{bin}/inputsource")
+    assert $?.success?
+  end
+
 end
 
