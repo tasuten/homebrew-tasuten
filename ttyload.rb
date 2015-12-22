@@ -13,8 +13,8 @@ class Ttyload < Formula
 
   test do
     ENV["TERM"] = "xterm-256color"
-    pipe_output("#{bin}/ttyload", "\C-c")
-    assert $?.eql?(130)
+    pipe_output "#{bin}/ttyload", "\C-c"
+    assert $?.eql? 130
   end
 
 end

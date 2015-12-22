@@ -11,7 +11,7 @@ class Inputsource < Formula
   end
 
   test do
-    system("#{bin}/inputsource")
+    system "#{bin}/inputsource"
     assert $?.success?
   end
 
