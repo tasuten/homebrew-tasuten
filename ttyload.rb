@@ -1,14 +1,14 @@
 class Ttyload < Formula
-  desc 'Utility to show a graph of load average'
-  head  'https://github.com/lindes/ttyload.git'
-  homepage 'http://www.daveltd.com/src/util/ttyload/'
-  url 'https://github.com/lindes/ttyload.git'
-  version '0.5.3'
+  desc "Utility to show a graph of load average"
+  homepage "http://www.daveltd.com/src/util/ttyload/"
+  url "https://github.com/lindes/ttyload.git"
+  version "0.5.3"
+  head "https://github.com/lindes/ttyload.git"
 
   def install
     system "make"
-    bin.install 'ttyload'
-    man1.install 'ttyload.1'
+    bin.install "ttyload"
+    man1.install "ttyload.1"
   end
 
   test do
@@ -19,6 +19,4 @@ class Ttyload < Formula
     Process.wait io.pid
     assert_equal 2, $?.termsig
   end
-
 end
-
