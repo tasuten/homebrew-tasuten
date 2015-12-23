@@ -11,6 +11,14 @@ class Ttyload < Formula
     man1.install 'ttyload.1'
   end
 
-  # TODO: Nice test
+  test do
+    ENV["TERM"] = "xterm-256color"
+    io = IO.popen "#{bin}/ttyload"
+    sleep 1
+    Process.kill "SIGINT", io.pid
+    Process.wait io.pid
+    assert_equal 2, $0.termsig
+  end
+
 end
 
