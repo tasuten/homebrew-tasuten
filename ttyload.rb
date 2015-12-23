@@ -17,7 +17,7 @@ class Ttyload < Formula
     sleep 1
     Process.kill "SIGINT", io.pid
     Process.wait io.pid
-    assert_equal 2, $0.termsig
+    assert_equal 2, $?.termsig
   end
 
 end
